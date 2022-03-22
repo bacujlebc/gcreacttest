@@ -1,0 +1,123 @@
+:root {
+  --card-width: 520px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.card-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 395px;
+  width: var(--card-width);
+
+  margin-top: 10px;
+  
+  border-radius: 10px;
+
+  -webkit-box-shadow: 4px 11px 15px 6px rgba(0,0,0,0.28); 
+  box-shadow: 4px 11px 15px 6px rgba(0,0,0,0.28);
+}
+
+.card-container-columns {
+  display: flex;
+  height: 250px;
+  width: var(--card-width);
+}
+
+.card-container-wrapper .left-column {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  height: 220px;
+
+  padding: 15px 25px 15px 25px;
+
+  background: rgb(0,153,255);
+  background: linear-gradient(150deg, rgba(0,153,255,1) 0%, rgba(23,153,189,1) 35%, rgba(28,114,167,1) 70%);
+
+  border-top-left-radius: 10px;
+}
+
+.card-container-wrapper .right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 175px;
+
+  background: rgb(0,153,255);
+  background: linear-gradient(150deg, rgba(0,153,255,1) 0%, rgba(23,153,189,1) 35%, rgba(28,114,167,1) 70%);
+
+  border-top-right-radius: 10px;
+}
+
+.card-container-wrapper .left-column > h1,
+.card-container-wrapper .left-column > h2 {
+  color: #fff;
+}
+
+.card-container-wrapper .left-column * {
+  color: #83dbff;
+}
+
+.card-container-wrapper .left-column hr {
+  border-color: #40a8ec;
+}
+
+.card-container-daily {
+  display: flex;
+
+  height: 125px;
+  width: var(--card-width);
+
+  padding: 10px 0;
+  
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-container-daily-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 25%;
+}
+
+.card-container-daily-item:not(:last-child) {
+  border-right: 1px solid #e2e2e2;
+}
+
+.card-container-daily-item p {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 12px;
+  color: #858581;
+}
+
+.card-container-description {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+hr {
+  width: 100%;
+}
+
+.card-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--card-width);
+  height: 250px;
+}
